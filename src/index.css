@@ -1,0 +1,48 @@
+
+@import "tailwindcss";
+
+@theme {
+  /* Brand Colors */
+  --color-espresso: #231916;
+  --color-khadi: #F5F1EA;
+  --color-terracotta: #B85A3A;
+  --color-monsoon: #D8CFC2;
+  --color-cardamom: #4A5D4E;
+  --color-brass: #C69C53;
+
+  /* Brand Typography */
+  --font-display: "Fraunces", serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background: #F5F1EA;
+    color: #231916;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: "Fraunces", serif;
+  }
+
+  button, a {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  ::selection {
+    background: #B85A3A;
+    color: white;
+  }
+}
